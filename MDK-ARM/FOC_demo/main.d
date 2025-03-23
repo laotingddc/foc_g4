@@ -32,7 +32,8 @@ foc_demo/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
-  ..\Core\Inc\usart.h ..\Core\Inc\main.h ..\Core\Inc\gpio.h \
+  ..\Core\Inc\tim.h ..\Core\Inc\main.h ..\Core\Inc\usart.h \
+  ..\Core\Inc\gpio.h ..\Common\common.h \
   ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\include\rtthread.h \
   ..\RT-Thread\rtconfig.h \
   ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\components\finsh\inc\finsh_config.h \
@@ -41,4 +42,5 @@ foc_demo/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
   ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\include\rtservice.h \
   ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\include\rtm.h \
-  ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\components\finsh\inc\finsh.h
+  ..\Middlewares\Third_Party\RealThread_RTOS_RT-Thread\components\finsh\inc\finsh.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h
