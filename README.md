@@ -1,8 +1,11 @@
 # xFOC - 基于STM32G431RBT6的FOC控制器
-[![开源链接](https://oshwhub.com/summerleaf/xfoc)](https://oshwhub.com/summerleaf/xfoc)
+[硬件开源链接](https://oshwhub.com/summerleaf/xfoc)
+
+[配置文档](https://flowus.cn/share/196ae1fd-b800-4e00-ad96-0d0e0801fd62?code=Q677GP)
 
 基于立创EDA开源硬件平台开发的FOC控制器，采用STM32G4高性能系列MCU，支持RT-Thread Nano实时操作系统。
 
+【FlowUs 息流】FOC学习
 ## 📜 更新
 
 ### [1] - 2025.3.22 - 基础驱动验证
