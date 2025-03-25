@@ -19,7 +19,7 @@ void led_thread_entry(void *parameter){
 
     while(1){
         HAL_GPIO_TogglePin(LED_ERR_GPIO_Port,LED_ERR_Pin);
-		rt_kprintf("hello rtthread\n");
+//		rt_kprintf("hello rtthread\n");
         rt_thread_delay(1000);
     }
 }

@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -29,7 +30,11 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+ int fputc(int ch, FILE *f)
+ {
+   HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 0xffff);
+   return ch;
+ }
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -90,6 +95,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_TIM1_Init();
+  MX_ADC1_Init();
+  MX_ADC2_Init();
   /* USER CODE BEGIN 2 */
   Hardware_Init();
   /* USER CODE END 2 */
