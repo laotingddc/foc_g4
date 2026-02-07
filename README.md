@@ -19,6 +19,28 @@
 - 添加三路互补PWM输出（未验证，手头没示波器）
 
 ## 📌 使用说明
+### 1. 准备开发环境
+- **STM32CubeMX**：用于查看/修改 `.ioc` 工程配置并重新生成代码。
+- **Keil MDK-ARM**（或兼容的 ARM 编译环境）：用于编译与烧录工程。
+
+### 2. 生成/更新代码（可选）
+1. 使用 STM32CubeMX 打开根目录下的 `FOC_demo.ioc`。
+2. 根据需要修改配置后生成代码（保持默认的工程路径即可）。
+
+### 3. 编译与下载
+1. 使用 Keil MDK 打开 `MDK-ARM/FOC_demo.uvprojx`。
+2. 选择目标并编译。
+3. 连接调试器后下载到板卡。
+
+### 4. 目录结构说明
+- `Core/`：CubeMX 生成的核心启动与外设初始化代码。
+- `Drivers/`：STM32 HAL/CMSIS 驱动库。
+- `Middlewares/`：第三方中间件（含 RT-Thread Nano）。
+- `RT-Thread/`：RT-Thread 组件与适配层。
+- `UserApp/`：用户应用层代码（业务逻辑入口）。
+- `motor_control/`：FOC 电机控制相关实现。
+- `MDK-ARM/`：Keil 工程与编译输出配置。
+- `Common/`：通用工具与组件。
 
 
 ## 📌 注意事项
